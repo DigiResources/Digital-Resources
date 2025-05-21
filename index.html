@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digital Resources</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 1rem; background: #f9fafb; line-height: 1.6; }
-    h2, h4 { color: #1e3a8a; }
+    h2, h3, h4 { color: #1e3a8a; }
     ul { padding-left: 1.2rem; }
     li { margin-bottom: 0.5rem; }
     section { margin-bottom: 2rem; }
@@ -19,6 +18,25 @@
       text-decoration: none;
       display: inline-block;
     }
+    nav {
+      background:#f8fafc;
+      padding:1rem;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #2563eb;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      background: #f1f5f9;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
     @media (max-width: 600px) {
       body { padding: 1rem; }
       section { margin-bottom: 1.5rem; }
@@ -27,23 +45,55 @@
   </style>
 </head>
 <body>
-
-<header style="background:#f8fafc; padding:1rem; display:flex; justify-content:space-between; align-items:center;">
-  <h1 style="margin:0; font-size:1.5rem;">Digital Resources</h1>
   <nav>
-    <a href="about-me.html" style="margin: 0 1rem;">About</a>
-    <a href="#services" style="margin: 0 1rem;">Services</a>
-    <a href="#contact" style="margin: 0 1rem;">Contact</a>
+    <h1 style="margin:0; font-size:1.5rem;">Digital Resources</h1>
+    <div>
+      <a href="about-me.html">About</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
-</header>
 
-<h2>Get Started Today!</h2>
-<p><a href="#" class="button" onmouseover="this.style.background='#1d4ed8'" onmouseout="this.style.background='#2563eb'">Book a Free Consultation</a></p>
+  <section style="text-align: center; padding: 2rem; background: #e0f2fe; border-radius: 10px;">
+    <h2>HR Solutions Designed for Small Businesses</h2>
+    <p>Compliance. Strategy. People. All in one place.</p>
+    <a class="button" href="#contact">Book a Free Consultation</a>
+  </section>
 
-<section style="margin-top: 2rem; padding: 1rem; background: #e0f2fe; border-radius: 8px;">
-  <h3>Client Feedback</h3>
-  <p>“Jessie provided the clarity we needed to scale our team confidently. Highly professional!” – Startup CEO</p>
-</section>
+  <section id="services">
+    <h3>Services Offered</h3>
+    <ul>
+      <li>HR Compliance Audits</li>
+      <li>Employee Onboarding & Offboarding</li>
+      <li>Custom Employee Handbook Development</li>
+      <li>HR Policy Creation & Review</li>
+      <li>Employee Document Templates (Offers, Warnings, Terminations)</li>
+      <li>HR Practice Review Reports</li>
+      <li>Virtual HR Consulting</li>
+    </ul>
+  </section>
 
+  <section id="pricing">
+    <h3>Service Packages</h3>
+    <ul>
+      <li><strong>Starter - $199</strong>: Handbook (10 pages), 1 HR Policy, 30-min Consultation</li>
+      <li><strong>Growth - $499</strong>: Handbook (25 pages), 3 HR Policies, Onboarding Checklist, 1-hr Consultation</li>
+      <li><strong>Essentials Retainer - $999/month</strong>: 10 hrs HR Support, Templates, Compliance Review, Email Support</li>
+      <li><strong>Termination Support - $150</strong>: Documentation + guidance per case</li>
+      <li><strong>HR Audit - $350</strong>: Full review with recommendations</li>
+      <li><strong>Custom Policy - $125/policy</strong></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:jessie.smith@digital-resources-hr.com">jessie.smith@digital-resources-hr.com</a></p>
+    <p>Phone: <a href="tel:4803410088">480-341-0088</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Digital Resources. All rights reserved.
+  </footer>
 </body>
 </html>

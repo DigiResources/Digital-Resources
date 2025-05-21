@@ -3,17 +3,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Digital Resources | HR for Small Business</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Resources</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 1rem; line-height: 1.6; background: #f9fafb; }
-    h1, h2, h3 { color: #1e3a8a; }
-    .section { margin-bottom: 2rem; }
-    .header, .footer { background: #e0f2fe; padding: 1rem; text-align: center; }
-    .contact { background: #f0f9ff; padding: 1rem; border-radius: 5px; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 1rem; background: #f9fafb; line-height: 1.6; }
+    h1, h2, h3, h4 { color: #1e3a8a; }
     ul { padding-left: 1.2rem; }
     li { margin-bottom: 0.5rem; }
-    .mobile { max-width: 600px; margin: auto; }
+    .section { margin-bottom: 2rem; }
+    .flex-wrap { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .column-stack { display: flex; flex-direction: column; gap: 0.5rem; }
+    .container { max-width: 900px; margin: auto; padding: 1rem; }
+    .header, .footer { background: #e0f2fe; padding: 1rem; text-align: center; }
+    img.logo { max-height: 50px; vertical-align: middle; }
+    @media (max-width: 600px) {
+      .flex-wrap, .column-stack { flex-direction: column; }
+    }
   </style>
 </head>
 <body>
@@ -21,7 +26,8 @@
     <h1>Digital Resources</h1>
     <p>Helping Small Businesses Grow With Better HR</p>
   </div>
-  <div class="mobile">
+
+  <div class="container">
     <div class="section">
       <h2>About Me</h2>
       <p>Digital Resources is led by a seasoned HR professional with extensive experience in compliance, onboarding, operational improvement, and digital HR tools. I help small businesses implement smart HR strategies through streamlined digital solutions.</p>
@@ -46,26 +52,53 @@
     <div class="section">
       <h2>Service Packages</h2>
       <ul>
-        <li><strong>STARTER PACKAGE - $199</strong><br>Custom handbook (10 pages), 1 HR policy, 30-min consultation</li>
-        <li><strong>GROWTH PACKAGE - $499</strong><br>Handbook (25 pages), 3 policies, onboarding checklist, 1-hour consult</li>
-        <li><strong>ESSENTIALS RETAINER - $999/month</strong><br>10 hours support, compliance review, templates, email support</li>
+        <li><strong>STARTER PACKAGE - $199</strong>: Custom Employee Handbook (10 pages), 1 HR Policy, 30-min Consultation</li>
+        <li><strong>GROWTH PACKAGE - $499</strong>: Handbook (25 pages), 3 Policies, Onboarding Checklist, 1-hour Consultation</li>
+        <li><strong>ESSENTIALS RETAINER - $999/month</strong>: 10 Hours Support, Compliance Review, Templates, Email Support</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>New Services</h2>
       <ul>
-        <li><strong>Termination Support - $150/case</strong></li>
-        <li><strong>HR Audit & Recommendations - $350</strong></li>
-        <li><strong>Custom Policy Creation - $125/policy</strong></li>
+        <li><strong>Termination Support - $150/case</strong>: Includes documentation & consultation</li>
+        <li><strong>HR Audit & Recommendations - $350</strong>: Full review and improvement report</li>
+        <li><strong>Custom Policy Creation - $125/policy</strong>: Tailored to your needs</li>
       </ul>
     </div>
 
-    <div class="section contact">
-      <h3>Contact</h3>
-      <p>Email: <a href="mailto:jessie.smith@digital-resources-hr.com">jessie.smith@digital-resources-hr.com</a><br>
-      Phone: <a href="tel:+14803410088">4803410088</a><br>
-      LinkedIn: [Link]</p>
+    <div class="section">
+      <h3>What I Offer</h3>
+      <div class="flex-wrap">
+        <ul>
+          <li>Custom Employee Handbooks</li>
+          <li>HR Policy Creation</li>
+          <li>Onboarding Templates</li>
+          <li>Remote HR Consulting</li>
+          <li>HR Compliance Audits</li>
+          <li>Termination Support</li>
+          <li>HR Practice Review Reports</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Why Work With Me</h3>
+      <div class="flex-wrap">
+        <ul>
+          <li>Quick Turnaround</li>
+          <li>Flat-Rate Packages</li>
+          <li>Friendly, Professional Support</li>
+          <li>Mobile-Friendly Digital Service</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section column-stack">
+      <h3>Contact Info</h3>
+      <span>Email: <a href="mailto:jessie.smith@digital-resources-hr.com">jessie.smith@digital-resources-hr.com</a></span>
+      <span>Phone: <a href="tel:+14803410088">4803410088</a></span>
+      <span>LinkedIn: [Link]</span>
     </div>
 
     <div class="section">
@@ -73,6 +106,7 @@
       <p>“Jessie helped me build a clear HR foundation—I finally feel organized and protected.” – Small Biz Client</p>
     </div>
   </div>
+
   <div class="footer">
     &copy; 2025 Digital Resources. All rights reserved.
   </div>

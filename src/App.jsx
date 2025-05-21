@@ -1,55 +1,75 @@
-import { Card, CardContent } from "./components/ui/card";
-import { Button } from "./components/ui/button";
+import './App.css';
 
-export default function DigitalResources() {
+export default function App() {
   return (
-    <div className="p-4 md:p-10 max-w-5xl mx-auto">
-      <h1 className="text-4xl font-bold text-center mb-6">Digital Resources</h1>
-      <p className="text-center text-lg mb-10 text-gray-700">
-        Helping Small Businesses Grow With Better HR
-      </p>
-      <section className="grid md:grid-cols-2 gap-6 mb-10">
-        <Card>
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-2">What I Offer</h2>
-            <ul className="list-disc list-inside text-gray-700">
-              <li>Custom Employee Handbooks</li>
-              <li>HR Policy Creation</li>
-              <li>Onboarding Templates</li>
-              <li>Remote HR Consulting</li>
-            </ul>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-2">Why Work With Me</h2>
-            <ul className="list-disc list-inside text-gray-700">
-              <li>Quick Turnaround</li>
-              <li>Flat-Rate Packages</li>
-              <li>Friendly, Professional Support</li>
-              <li>HR That Makes Sense for Small Teams</li>
-            </ul>
-          </CardContent>
-        </Card>
+    <div className="font-sans text-gray-800 bg-white">
+      <header className="bg-gradient-to-r from-blue-100 to-blue-200 px-6 py-8 shadow">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <div className="flex items-center space-x-3">
+            <img src="/logo.png" alt="Digital Resources Logo" className="h-10" />
+            <span className="text-xl font-bold">Digital Resources</span>
+          </div>
+          <nav className="space-x-6 text-sm font-medium">
+            <a href="#services" className="hover:text-blue-600">Services</a>
+            <a href="#about" className="hover:text-blue-600">About</a>
+            <a href="#contact" className="hover:text-blue-600">Contact</a>
+            <a href="#book" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Consultation</a>
+          </nav>
+        </div>
+      </header>
+
+      <section className="text-center py-16 bg-blue-50">
+        <h1 className="text-4xl font-bold mb-4">HR Consulting for Small Businesses</h1>
+        <p className="text-lg mb-6">Strategic support in compliance, onboarding, policies, and more.</p>
+        <a href="#book" className="inline-block bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800">Get Started</a>
       </section>
-      <Card className="mb-10">
-        <CardContent className="p-6">
-          <p className="text-gray-700 mb-4">
-            HR leader with expertise in compliance, onboarding, benefits, and process improvement—empowering small businesses through strategic digital solutions.
-          </p>
-          <Button>
-            <a href="https://calendly.com/your-link">Book a Free Consultation</a>
-          </Button>
-        </CardContent>
-      </Card>
-      <Card>
-        <CardContent className="p-6">
-          <h2 className="text-2xl font-semibold mb-4">Contact</h2>
-          <p className="text-gray-700 mb-1">Email: <a href="mailto:YourEmail@domain.com" className="underline">YourEmail@domain.com</a></p>
-          <p className="text-gray-700 mb-1">Phone: [Your Phone Number]</p>
-          <p className="text-gray-700">LinkedIn: <a href="#" className="underline">[Your LinkedIn]</a></p>
-        </CardContent>
-      </Card>
+
+      <section id="services" className="py-16 px-6 bg-white">
+        <h2 className="text-2xl font-semibold text-center mb-10">Services</h2>
+        <div className="max-w-5xl mx-auto grid md:grid-cols-4 gap-6 text-center">
+          <div className="bg-blue-100 p-6 rounded shadow">
+            <h3 className="font-bold mb-2">HR Compliance Audits</h3>
+            <p className="text-sm">Ensure your business stays compliant.</p>
+          </div>
+          <div className="bg-blue-100 p-6 rounded shadow">
+            <h3 className="font-bold mb-2">Employee Onboarding</h3>
+            <p className="text-sm">3 policies + 1-hour consult.</p>
+          </div>
+          <div className="bg-blue-100 p-6 rounded shadow">
+            <h3 className="font-bold mb-2">HR Policy Development</h3>
+            <p className="text-sm">3 policies + onboarding setup.</p>
+          </div>
+          <div className="bg-blue-100 p-6 rounded shadow">
+            <h3 className="font-bold mb-2">Employee Handbook Creation</h3>
+            <p className="text-sm">Tailored to your business needs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" className="py-16 px-6 bg-gray-50">
+        <h2 className="text-2xl font-semibold text-center mb-10">Pricing</h2>
+        <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6 text-center">
+          <div className="bg-white p-6 rounded shadow border">
+            <h3 className="font-bold text-lg mb-2">Starter</h3>
+            <p className="text-3xl font-bold mb-2">$300</p>
+            <p className="text-sm mb-2">1 policy + 1 hour consult</p>
+          </div>
+          <div className="bg-white p-6 rounded shadow border">
+            <h3 className="font-bold text-lg mb-2">Enhanced</h3>
+            <p className="text-3xl font-bold mb-2">$600</p>
+            <p className="text-sm mb-2">3 policies + onboarding setup</p>
+          </div>
+          <div className="bg-white p-6 rounded shadow border">
+            <h3 className="font-bold text-lg mb-2">Retainer</h3>
+            <p className="text-3xl font-bold mb-2">$800/mo</p>
+            <p className="text-sm mb-2">Ongoing HR support</p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="text-center py-6 bg-blue-100 mt-10 text-sm">
+        &copy; 2025 Digital Resources. All rights reserved.
+      </footer>
     </div>
   );
 }

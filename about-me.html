@@ -4,19 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn more about Jessie Smith, founder of Digital Resources – offering expert HR solutions for small businesses.">
+  <meta name="author" content="Jessie Smith">
   <title>About Jessie Smith</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 2rem;
+      padding: 0;
       background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe);
       color: #1f2937;
       line-height: 1.6;
     }
+    header, nav {
+      background: #f8fafc;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #2563eb;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
     .container {
       max-width: 900px;
-      margin: auto;
+      margin: 2rem auto;
       background: white;
       padding: 2rem;
       border-radius: 12px;
@@ -34,27 +50,24 @@
       margin-bottom: 1.2rem;
       font-size: 1.05rem;
     }
-    nav {
-      background:#f8fafc;
-      padding:1rem;
-      text-align:center;
-    }
-    nav a {
-      color:#2563eb;
-      font-weight:bold;
-      text-decoration:none;
-    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
+    footer {
+      background: #f1f5f9;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #475569;
+    }
   </style>
 </head>
 <body>
-  <nav>
+  <nav role="navigation" aria-label="Main navigation">
     <a href="./index.html">Back to Home</a>
   </nav>
-  <div class="container">
+  <main class="container" tabindex="0">
     <h1>About Jessie Smith</h1>
     <p>Jessie Smith is a dynamic Human Resources professional with more than a decade of progressive leadership experience across diverse industries including finance, retail, technology, and professional services. With an MBA in Human Resources Management and a BS in Business Management from Colorado Technical University, he combines strategic insight with hands-on operational knowledge.</p>
 
@@ -63,6 +76,9 @@
     <p>Jessie is also highly experienced in managing high-stakes compliance requirements such as Affirmative Action Plans and EEO-1 reporting. He has consistently driven alignment between HR functions and organizational goals while prioritizing employee well-being and equitable practices.</p>
 
     <p>He is passionate about helping small businesses grow with confidence by offering scalable HR solutions through his consulting venture, Digital Resources. His consultative approach emphasizes trust, communication, and sustainable practices that strengthen company culture and reduce risk.</p>
-  </div>
+  </main>
+  <footer>
+    &copy; 2025 Digital Resources. All rights reserved. | Designed for accessibility and performance.
+  </footer>
 </body>
 </html>

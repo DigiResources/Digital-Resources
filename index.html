@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Resources</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 1rem; background: #f9fafb; line-height: 1.6; }
-    h2, h3, h4 { color: #1e3a8a; }
-    ul { padding-left: 1.2rem; }
-    li { margin-bottom: 0.5rem; }
-    section { margin-bottom: 2rem; }
-    a.button {
-      background: #2563eb;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background: #f9fafb;
+      line-height: 1.6;
+    }
+    h2, h3 {
+      color: #1e3a8a;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
     }
     nav {
       background:#f8fafc;
@@ -25,18 +28,21 @@
       justify-content: space-between;
       align-items:center;
     }
+    nav img {
+      max-height: 60px;
+    }
     nav a {
       margin: 0 1rem;
       color: #2563eb;
       font-weight: bold;
       text-decoration: none;
     }
-    img {
+    img.profile {
       display: block;
       max-width: 100%;
       height: auto;
       border-radius: 12px;
-      margin: 1rem auto 2rem auto;
+      margin: 1rem auto;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
     footer {
@@ -49,7 +55,7 @@
 </head>
 <body>
   <nav>
-    <h1 style="margin:0; font-size:1.5rem;">Digital Resources</h1>
+    <img src="logo.png" alt="Digital Resources Logo" />
     <div>
       <a href="#about">About</a>
       <a href="#services">Services</a>
@@ -58,30 +64,30 @@
     </div>
   </nav>
 
-  <section id="hero" style="text-align: center; padding: 2rem; background: #e0f2fe; border-radius: 10px;">
+  <section style="text-align: center; background: #e0f2fe; padding: 2rem; border-radius: 10px;">
     <h2>HR Solutions Designed for Small Businesses</h2>
     <p>Compliance. Strategy. People. All in one place.</p>
-    <a class="button" href="#contact">Book a Free Consultation</a>
   </section>
 
-  <section id="about">
-    <h3>About Jessie Smith</h3>
-    <img src="profile-pic.jpg" alt="Jessie Smith profile photo" />
-    <p>Jessie Smith is a dynamic Human Resources professional with more than a decade of progressive leadership experience across diverse industries including finance, retail, technology, and professional services. With an MBA in Human Resources Management and a BS in Business Management from Colorado Technical University, he combines strategic insight with hands-on operational knowledge.</p>
-    <p>Currently serving as a Regional HR Manager at Resourcing Edge, Jessie leads multi-state HR operations, overseeing regulatory compliance, benefits administration, EPLI/DOL filings, and team leadership. His previous roles at PayPal, Circle K, and Target honed his expertise in employee relations, policy development, compliance reporting, onboarding/offboarding, and process optimization.</p>
-    <p>Jessie is also highly experienced in managing high-stakes compliance requirements such as Affirmative Action Plans and EEO-1 reporting. He has consistently driven alignment between HR functions and organizational goals while prioritizing employee well-being and equitable practices.</p>
-    <p>He is passionate about helping small businesses grow with confidence by offering scalable HR solutions through his consulting venture, Digital Resources. His consultative approach emphasizes trust, communication, and sustainable practices that strengthen company culture and reduce risk.</p>
-  </section>
+  
+<section id="about">
+  <h3>About Jessie Smith</h3>
+  <img src="profile-pic.jpg" alt="Jessie Smith profile photo" class="profile"/>
+  <p>Jessie Smith is a dynamic Human Resources professional with more than a decade of progressive leadership experience across diverse industries including finance, retail, technology, and professional services. With an MBA in Human Resources Management and a BS in Business Management from Colorado Technical University, he combines strategic insight with hands-on operational knowledge.</p>
+  <p>Currently serving as a Regional HR Manager, Jessie leads multi-state HR operations, overseeing regulatory compliance, benefits administration, EPLI/DOL filings, and team leadership. His previous roles at PayPal, Circle K, and Target honed his expertise in employee relations, policy development, compliance reporting, onboarding/offboarding, and process optimization.</p>
+  <p>Jessie is also highly experienced in managing high-stakes compliance requirements such as Affirmative Action Plans and EEO-1 reporting. He has consistently driven alignment between HR functions and organizational goals while prioritizing employee well-being and equitable practices.</p>
+  <p>He is passionate about helping small businesses grow with confidence by offering scalable HR solutions through his consulting venture, Digital Resources. His consultative approach emphasizes trust, communication, and sustainable practices that strengthen company culture and reduce risk.</p>
+</section>
+
 
   <section id="services">
     <h3>Services Offered</h3>
     <ul>
       <li>HR Compliance Audits</li>
-      <li>Employee Onboarding & Offboarding</li>
-      <li>Custom Employee Handbook Development</li>
-      <li>HR Policy Creation & Review</li>
-      <li>Employee Document Templates (Offers, Warnings, Terminations)</li>
-      <li>HR Practice Review Reports</li>
+      <li>Onboarding & Offboarding Support</li>
+      <li>Employee Handbook Development</li>
+      <li>HR Policy Creation</li>
+      <li>Employee Documentation Templates</li>
       <li>Virtual HR Consulting</li>
     </ul>
   </section>
@@ -90,11 +96,8 @@
     <h3>Service Packages</h3>
     <ul>
       <li><strong>Starter - $199</strong>: Handbook (10 pages), 1 HR Policy, 30-min Consultation</li>
-      <li><strong>Growth - $499</strong>: Handbook (25 pages), 3 HR Policies, Onboarding Checklist, 1-hr Consultation</li>
-      <li><strong>Essentials Retainer - $999/month</strong>: 10 hrs HR Support, Templates, Compliance Review, Email Support</li>
-      <li><strong>Termination Support - $150</strong>: Documentation + guidance per case</li>
-      <li><strong>HR Audit - $350</strong>: Full review with recommendations</li>
-      <li><strong>Custom Policy - $125/policy</strong></li>
+      <li><strong>Growth - $499</strong>: Handbook (25 pages), 3 HR Policies, 1-hr Consultation</li>
+      <li><strong>Essentials Retainer - $999/month</strong>: 10 hrs HR Support + Templates</li>
     </ul>
   </section>
 

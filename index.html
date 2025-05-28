@@ -31,16 +31,19 @@
       font-weight: bold;
       text-decoration: none;
     }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 1rem auto 2rem auto;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
     footer {
       background: #f1f5f9;
       padding: 1rem;
       text-align: center;
       font-size: 0.9rem;
-    }
-    @media (max-width: 600px) {
-      body { padding: 1rem; }
-      section { margin-bottom: 1.5rem; }
-      h2, h4 { font-size: 1.2rem; }
     }
   </style>
 </head>
@@ -48,17 +51,26 @@
   <nav>
     <h1 style="margin:0; font-size:1.5rem;">Digital Resources</h1>
     <div>
-      <a href="./about-me.html">About</a>
+      <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
-  <section style="text-align: center; padding: 2rem; background: #e0f2fe; border-radius: 10px;">
+  <section id="hero" style="text-align: center; padding: 2rem; background: #e0f2fe; border-radius: 10px;">
     <h2>HR Solutions Designed for Small Businesses</h2>
     <p>Compliance. Strategy. People. All in one place.</p>
     <a class="button" href="#contact">Book a Free Consultation</a>
+  </section>
+
+  <section id="about">
+    <h3>About Jessie Smith</h3>
+    <img src="profile-pic.jpg" alt="Jessie Smith profile photo" />
+    <p>Jessie Smith is a dynamic Human Resources professional with more than a decade of progressive leadership experience across diverse industries including finance, retail, technology, and professional services. With an MBA in Human Resources Management and a BS in Business Management from Colorado Technical University, he combines strategic insight with hands-on operational knowledge.</p>
+    <p>Currently serving as a Regional HR Manager at Resourcing Edge, Jessie leads multi-state HR operations, overseeing regulatory compliance, benefits administration, EPLI/DOL filings, and team leadership. His previous roles at PayPal, Circle K, and Target honed his expertise in employee relations, policy development, compliance reporting, onboarding/offboarding, and process optimization.</p>
+    <p>Jessie is also highly experienced in managing high-stakes compliance requirements such as Affirmative Action Plans and EEO-1 reporting. He has consistently driven alignment between HR functions and organizational goals while prioritizing employee well-being and equitable practices.</p>
+    <p>He is passionate about helping small businesses grow with confidence by offering scalable HR solutions through his consulting venture, Digital Resources. His consultative approach emphasizes trust, communication, and sustainable practices that strengthen company culture and reduce risk.</p>
   </section>
 
   <section id="services">

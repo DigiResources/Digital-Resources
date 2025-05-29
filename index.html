@@ -1,168 +1,146 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Resources</title>
+  <meta name="description" content="Learn more about Jessie Smith, founder of Digital Resources – offering expert HR solutions for small businesses.">
+  <meta name="author" content="Jessie Smith">
+  <meta property="og:title" content="About Jessie Smith – Digital Resources">
+  <meta property="og:description" content="Founder of Digital Resources, Jessie Smith provides expert HR solutions for small businesses.">
+  <meta property="og:url" content="https://digital-resources-six.vercel.app/about-me.html">
+  <meta property="og:type" content="website">
+  <title>About Jessie Smith</title>
   <style>
-    :root {
-      --primary: #1e3a8a;
-      --secondary: #2563eb;
-      --accent: #f59e0b;
-    }
+    * { box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #ffffff;
-      line-height: 1.6;
+      background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe);
       color: #1f2937;
+      line-height: 1.6;
     }
-    nav {
+    header, nav {
       background: #f8fafc;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    nav img {
-      max-height: 180px;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
-      margin: 0 1rem;
-      color: var(--secondary);
+      color: #2563eb;
       font-weight: bold;
       text-decoration: none;
+      margin: 0 1rem;
     }
-    .hero {
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #0f172a;
+      border-bottom: 3px solid #38bdf8;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+    .profile-img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 2rem auto;
+    }
+    .cta {
       text-align: center;
-      background: #e0f2fe;
-      padding: 3rem 2rem;
-      border-radius: 0 0 1rem 1rem;
+      margin-top: 2rem;
     }
-    .hero h2 {
-      color: var(--primary);
-      font-size: 2rem;
-    }
-    .button {
-      background: var(--secondary);
+    .cta a {
+      background: #2563eb;
       color: white;
       padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 8px;
+      border-radius: 5px;
       text-decoration: none;
-      font-size: 1rem;
-      margin-top: 1rem;
       display: inline-block;
     }
-    section {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem;
+    form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
-    .profile {
-      max-width: 350px;
-      margin: 1rem auto;
-      display: block;
-      border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      font-size: 1rem;
     }
-    ul {
-      padding-left: 1.5rem;
+    button {
+      padding: 0.75rem;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1d4ed8;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     footer {
       background: #f1f5f9;
       text-align: center;
       padding: 1rem;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #475569;
-    }
-    .testimonial, .video, .blog-preview {
-      background: #f9fafb;
-      border-left: 4px solid var(--accent);
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 6px;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <img src="logo.png" alt="Digital Resources Logo">
-    <div>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
-    </div>
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="./index.html">Back to Home</a>
   </nav>
+  <main class="container" tabindex="0">
+    <h1>About Jessie Smith</h1>
+    <img src="Profile pic.jpg" alt="Jessie Smith seated between two statues" class="profile-img">
+    <p>Jessie Smith is a dynamic Human Resources professional with more than a decade of progressive leadership experience across diverse industries including finance, retail, technology, and professional services...</p>
 
-  <div class="hero">
-    <h2>HR Solutions Designed for Small Businesses</h2>
-    <p>Compliance. Strategy. People. All in one place.</p>
-    <a class="button" href="#contact">Book a Free Consultation</a>
-  </div>
-
-  <section id="about">
-    <h3>About Jessie Smith</h3>
-    <img src="profile-pic.jpg" alt="Jessie Smith" class="profile">
-    <p>Jessie Smith is a dynamic Human Resources professional with more than a decade of progressive leadership experience across diverse industries including finance, retail, technology, and professional services. With an MBA in Human Resources Management and a BS in Business Management from Colorado Technical University, he combines strategic insight with hands-on operational knowledge.</p>
-    <p>Currently serving as a Regional HR Manager, Jessie leads multi-state HR operations, overseeing regulatory compliance, benefits administration, EPLI/DOL filings, and team leadership. His previous roles at PayPal, Circle K, and Target honed his expertise in employee relations, policy development, compliance reporting, onboarding/offboarding, and process optimization.</p>
-    <p>Jessie is also highly experienced in managing high-stakes compliance requirements such as Affirmative Action Plans and EEO-1 reporting. He has consistently driven alignment between HR functions and organizational goals while prioritizing employee well-being and equitable practices.</p>
-    <p>He is passionate about helping small businesses grow with confidence by offering scalable HR solutions through his consulting venture, Digital Resources. His consultative approach emphasizes trust, communication, and sustainable practices that strengthen company culture and reduce risk.</p>
-    <div class="testimonial">
-      <strong>Client Testimonial:</strong>
-      <p>"Digital Resources helped us implement compliant, people-first HR practices and boosted our team morale like never before."</p>
+    <div class="cta">
+      <a href="#contact">Contact Me</a>
     </div>
-  </section>
 
-  <section id="services">
-    <h3>Services Offered</h3>
-    <ul>
-      <li>HR Compliance Audits</li>
-      <li>Employee Onboarding & Offboarding</li>
-      <li>Handbook & Policy Development</li>
-      <li>Employee Documentation Templates</li>
-      <li>Virtual HR Consulting</li>
-    </ul>
-    <div class="video">
-      <strong>Watch:</strong>
-      <p><a href="#">Click to view a 60-second introduction to our services.</a></p>
-    </div>
-  </section>
-
-  <section id="pricing">
-    <h3>Service Packages</h3>
-    <ul>
-      <li><strong>Starter - $199</strong>: Handbook (10 pages), 1 HR Policy, 30-min Consultation</li>
-      <li><strong>Growth - $499</strong>: Handbook (25 pages), 3 HR Policies, 1-hr Consultation</li>
-      <li><strong>Essentials Retainer - $999/month</strong>: 10 hrs HR Support, Templates, Email Support</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:jessie.smith@digital-resources-hr.com">jessie.smith@digital-resources-hr.com</a></p>
-    <p>Phone: <a href="tel:4803410088">480-341-0088</a></p>
-  </section>
-
-  <section class="blog-preview">
-    <h3>5 HR Compliance Pitfalls Every Startup Should Avoid</h3>
-    <p>Startups often move fast, but ignoring HR compliance can lead to costly legal issues and decreased employee morale. Here are five pitfalls to avoid:</p>
-    <ol>
-      <li><strong>Improper Employee Classification:</strong> Misclassifying employees as independent contractors or exempt vs. non-exempt can result in fines and back pay.</li>
-      <li><strong>Incomplete Documentation:</strong> Failure to maintain proper I-9 forms, handbooks, and job descriptions exposes businesses to legal vulnerabilities.</li>
-      <li><strong>Ignoring Wage and Hour Laws:</strong> Ensure proper overtime calculations, rest breaks, and record-keeping to stay compliant with FLSA and local labor laws.</li>
-      <li><strong>Lack of Harassment Prevention Training:</strong> Preventing a toxic culture and avoiding liability starts with required anti-harassment policies and training.</li>
-      <li><strong>No Written Policies or Inconsistent Enforcement:</strong> Clear, consistently applied policies prevent discrimination claims and build employee trust.</li>
-    </ol>
-    <p>Need help staying compliant? Contact <a href="#contact">Digital Resources</a> for expert guidance tailored to your small business.</p>
-  </section>
-
+    <form id="contact" action="https://formspree.io/f/xdkgqypr" method="POST">
+      <label>
+        Your Name:
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Your Email:
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Your Message:
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
   <footer>
-    &copy; 2025 Digital Resources. All rights reserved.
+    &copy; 2025 Digital Resources. All rights reserved. | Designed for accessibility and performance.
   </footer>
 </body>
 </html>

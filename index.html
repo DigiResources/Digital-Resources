@@ -1,12 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digital Resources HR – Expert HR Services</title>
-  <meta name="description" content="Human Resources consulting by Jessie Smith. Expert support in compliance, onboarding, payroll, and more." />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <style>...</style>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f9fafb; color: #1f2937; }
+    nav { background: #1e3a8a; color: white; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo img { height: 50px; background-color: #1e3a8a; border-radius: 5px; }
+    .nav-links a { color: white; text-decoration: none; margin-left: 1rem; font-weight: bold; }
+    .hero { padding: 1.5rem 1rem; background: #3b82f6; color: white; text-align: left; }
+    .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .service { background: white; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: all 0.3s ease; }
+    .service h3 { margin-top: 0; color: #2563eb; }
+    .service:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+    .contact-form { margin-top: 3rem; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    form { display: flex; flex-direction: column; gap: 1rem; }
+    input, textarea { padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 5px; }
+    button { padding: 0.75rem; background: #2563eb; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #1d4ed8; }
+    footer { background: #f3f4f6; text-align: center; padding: 1rem; margin-top: 3rem; font-size: 0.9rem; }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.75rem; }
+      .service, .contact-form { padding: 1rem; }
+      body { padding: 1rem; }
+      .nav-logo img { height: 40px; }
+    }
+  </style>
 </head>
-<body>...</body>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <img src="company-logo.png" alt="Digital Resources HR logo">
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+    </div>
+  </nav>
+  <header class="hero" id="home">
+    <h1>Welcome to Digital Resources HR</h1>
+    <p>Your trusted partner for expert Human Resources solutions</p>
+  </header>
+  <main class="container">
+    <h2 style="text-align:center;">About Jessie</h2>
+    <section class="intro" id="about" style="text-align: center; margin-bottom: 2rem;">
+      <img src="profile-pic.jpg" alt="Jessie Smith Profile Picture" style="max-width: 350px; border-radius: 50%; margin-bottom: 1rem;">
+      <p>Hello, I’m Jessie Smith — the founder of Digital Resources HR. I bring over a decade of hands-on experience in strategic Human Resources operations across healthcare, education, and the corporate sector. I specialize in transforming people processes, ensuring compliance, and cultivating thriving work environments. My mission is to help small businesses access high-quality HR support without the cost of a full-time department. I believe in aligning HR with business goals and providing people-first guidance tailored to each client’s needs.</p>
+    </section>
+    <h2 style="text-align:center;">My Services</h2>
+    <section class="services">
+      <div class="service">
+        <h3>HR Compliance Support</h3>
+        <p>Ensure your business meets legal requirements. $300/mo or $120/hr.</p>
+      </div>
+      <div class="service">
+        <h3>Onboarding & Offboarding</h3>
+        <p>Streamline employee transitions smoothly. $200/mo or $100/hr.</p>
+      </div>
+      <div class="service">
+        <h3>Payroll & Timekeeping Guidance</h3>
+        <p>Set up and troubleshoot pay systems. $250/mo or $115/hr.</p>
+      </div>
+      <div class="service">
+        <h3>Employee Relations Advising</h3>
+        <p>Manage conflicts, investigations, and morale. $300/mo or $120/hr.</p>
+      </div>
+      <div class="service">
+        <h3>HR Audits & SOPs</h3>
+        <p>Review policies and create standard operating procedures. $150/hr.</p>
+      </div>
+      <div class="service">
+        <h3>Hiring & Recruitment Strategy</h3>
+        <p>Craft job descriptions, manage postings. $175/hr or project-based.</p>
+      </div>
+    </section>
+    <section class="contact-form" id="contact-form">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/xdkgqypr" method="POST">
+        <label>Your Name:<input type="text" name="name" required /></label>
+        <label>Your Email:<input type="email" name="email" required /></label>
+        <label>Your Message:<textarea name="message" rows="5" required></textarea></label>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Digital Resources HR | Email: jessie.smith@digital-resources-hr.com | Phone: 480-341-0088
+  </footer>
+</body>
 </html>

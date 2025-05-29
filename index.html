@@ -8,11 +8,11 @@
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f9fafb; color: #1f2937; }
-    header, nav { background: #1e3a8a; color: white; padding: 1rem; text-align: center; }
-    nav a { color: white; text-decoration: none; margin: 0 1rem; font-weight: bold; }
+    nav { background: #1e3a8a; color: white; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo img { height: 50px; background-color: #1e3a8a; border-radius: 5px; }
+    .nav-links a { color: white; text-decoration: none; margin-left: 1rem; font-weight: bold; }
     .hero { padding: 1.5rem 1rem; background: #3b82f6; color: white; text-align: left; }
     .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    .hero img { max-width: 200px; margin-bottom: 1rem; background-color: #3b82f6; padding: 10px; border-radius: 10px; display: block; }
     .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
     .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
     .service { background: white; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: all 0.3s ease; }
@@ -28,16 +28,21 @@
       .hero h1 { font-size: 1.75rem; }
       .service, .contact-form { padding: 1rem; }
       body { padding: 1rem; }
+      .nav-logo img { height: 40px; }
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Me</a>
+    <div class="nav-logo">
+      <img src="company-logo.png" alt="Digital Resources HR logo">
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+    </div>
   </nav>
   <header class="hero" id="home">
-    <img src="company-logo.png" alt="Digital Resources HR logo">
     <h1>Welcome to Digital Resources HR</h1>
     <p>Your trusted partner for expert Human Resources solutions</p>
   </header>
